@@ -36,13 +36,13 @@
 <body>
     <div class="main">
         <ul>
-            <a href="https://www.github.com/LuciLua"><li>
+            <a target="_blank" href="https://www.github.com/LuciLua"><li>
             <span class="title">GitHub</span>
             <span class="icon" id="git">
                 <i class="fa fa-github-alt" aria-hidden="true"></i>
             </span>
             </li></a>
-           <a href="https://www.linkedin.com/in/l%C3%BAcia-guelber-837a50185/"> <li>
+           <a target="_blank" href="https://www.linkedin.com/in/l%C3%BAcia-guelber-837a50185/"> <li>
                 <span class="title">Linkedin</span>
                 <span class="icon" id="git">
                     <i class="fa fa-linkedin" aria-hidden="true"></i>
@@ -57,8 +57,15 @@
 </div>
 <div class="tabela">
     <h1>Dificuldade: <span id="dif">Medio</span></h1>
-    <input type="range" id="in" min="10" max="80" value="55" oninput="velo()">
+    <div class="align-in">
+        <input type="range" id="in" min="10" max="80" value="55" oninput="velo()">
     </div>
+    </div>
+    <footer>
+        <p>
+            @2021 SnakeGame, Luci
+        </p>
+    </footer>
 <script src="snake.js"></script>
 </body>
 </html>

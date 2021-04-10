@@ -24,12 +24,16 @@
                 </span>
                 </li></a>
         </ul>
-    <img src="snake.webp" alt="">
     </div>
+<div class="i"><img src="snake.webp" alt=""></div>
 <canvas id="gc" width="400" height="400"></canvas>
 <div class="tabela">
-<h1>Pontuação: <span id="pts"></span></h1>
+<h1>Pontuação: <span id="pts">0</span></h1>
 </div>
+<div class="tabela">
+    <h1>Dificuldade: <span id="dif">Medio</span></h1>
+    <input type="range" id="in" min="10" max="80" value="55" oninput="velo()">
+    </div>
 <script src="snake.js"></script>
 </body>
 </html>

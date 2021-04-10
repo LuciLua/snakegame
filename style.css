@@ -6,45 +6,108 @@
 
 #red{
     color: aqua;
+    background-color: #14f508;
+    width: 100px;
+    height: 10px;
 }
 body{
     background-color: rgb(36, 37, 43);
 
 }
 img{
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
+    position: absolute;
+    float: left;
     display: flex;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+    top: 0;
 }
 canvas{
-    border: rgb(255, 255, 255) 1px solid;
+    border: rgb(33, 33, 33) 1px solid;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    display: flex;
-    top: -20px;
-        
+    display: flex;    
+    box-shadow: 0px 0px 10px black;    
+}
+.main{
+    background-color: #01010158;
+    height: 80px;
+    width: 100%;
+    margin-bottom: 100px;
 }
 
-h1{
-    color: #14f508;
-    font-family: Helvetica;
-    font-weight: 560;;
+.main ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    align-items: center;
+    height: 100%;
     width: 100%;
-    height: 100px;
-    top: 100px;
-    left: -30px;
-    font-size: 25px;
+    list-style: none;
 }
 
-h1 span{
-    margin-left: 70px;
-    color: rgb(255, 0, 0);
+.main ul a{
+    text-decoration: none;
+    color: rgb(135, 135, 135);
+    font-size: 20px;
+    font-family: poppins;
+    background-color: #1e1f21;
+    padding: 10px 15px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.324);
+    margin: 15px;
 }
+
+.main ul li .icon{
+    color: #ffffffcf;
+}
+
+.main ul li{
+    transition: 1s;
+}
+
+.main ul li .icon{
+    margin-right: 5px;
+}
+
+.main ul li .title{
+    /* display: none; */
+    font-size: 0px;
+    transition: 1s;
+    left: 20px;
+    position: relative;
+}
+
+.main ul a li:hover > .title{
+    display: inline;
+    width: fit-content;
+    font-size: 15px;
+    left: 0;
+    opacity: 100%;
+}
+
+.tabela h1{
+    color: rgb(55, 225, 13);
+    font-weight: 400;
+    font-size: 20px;
+    font-family: monospace;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.tabela{
+    background-color: #090909;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 18px black;
+}
+

@@ -6,14 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
-    <div id="red" src="" alt=""></div>
     <div class="main">
-            <h1>Snake Game<span>By Luci</span> </h1>
+        <ul>
+            <a href="https://www.github.com/LuciLua"><li>
+            <span class="title">GitHub</span>
+            <span class="icon" id="git">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </span>
+            </li></a>
+           <a href="https://www.linkedin.com/in/l%C3%BAcia-guelber-837a50185/"> <li>
+                <span class="title">Linkedin</span>
+                <span class="icon" id="git">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </span>
+                </li></a>
+        </ul>
     <img src="snake.webp" alt="">
     </div>
 <canvas id="gc" width="400" height="400"></canvas>
+<div class="tabela">
+<h1>Pontuação: <span id="pts"></span></h1>
+</div>
 <script src="snake.js"></script>
 </body>
 </html>

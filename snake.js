@@ -32,7 +32,7 @@ function game() {
     for(var i=0;i<trail.length;i++) {
         ctx.fillRect(trail[i].x*gs,trail[i].y*gs,gs-2,gs-2);
         if(trail[i].x==px && trail[i].y==py) {
-            tail = 5;
+            tail =5;
         }
     }
     trail.push({x:px,y:py});
@@ -46,21 +46,32 @@ function game() {
         ay=Math.floor(Math.random()*tc);
     }
     ctx.fillStyle="red";
+    // posição da maca
     ctx.fillRect(ax*gs,ay*gs,gs-2,gs-2);
 }
 function keyPush(evt) {
     switch(evt.keyCode) {
+        // seta pra esquerda
         case 37:
             xv=-1;yv=0;
             break;
+        // seta pra cima
         case 38:
             xv=0;yv=-1;
             break;
+        // seta pra direita
         case 39:
             xv=1;yv=0;
             break;
+        // seta pra baixo
         case 40:
             xv=0;yv=1;
             break;
     }
 }
+
+var pontos = document.getElementById('pts')
+
+pontos.textContent = tail
+
+tail.setAttribute(pontos.textContent, tail)

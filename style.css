@@ -466,7 +466,6 @@ canvas{
     width: 90%;
     height: fit-content;
     position: relative;
-    background-color: #262630;
     justify-content: center;
     display: flex;
     align-items: center;

@@ -163,9 +163,10 @@ canvas{
       width: 100%;
       height: 50px;
       margin-top: 100px;
+      background-color: rgba(16, 16, 16, 0.568);
   }
 
-  p{
+  footer p{
       position: relative;
       color: rgb(77, 79, 92);
       font-weight: 100;
@@ -175,7 +176,6 @@ canvas{
       justify-content: center;
       height: 100%;
       align-items: center;
-      padding-top: 60px;
   }
 
   @media only screen and (max-width: 568px) {
@@ -340,9 +340,10 @@ canvas{
 .eventos{
     width: 100%;
     height: 60vh;
+    margin-bottom: 290px;
 }
 
-.eventos .eventos-content p{
+.eventos .eventos-content #descrip-evt{
     position: relative;
     width: 65%;
     height: auto;
@@ -353,7 +354,28 @@ canvas{
     margin-bottom: 30px;
     font-family: poppins;
     font-weight: 400;
-    
+}
+
+
+.eventos .eventos-content .cards .card .d-evt{
+    position: relative;
+    color: #797979;
+    font-family: poppins;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    top: 0;
+}
+
+.eventos-content iframe{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 15em;
 }
 
 .cards{
@@ -377,7 +399,83 @@ canvas{
     border-left: #14f508 5px solid;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
 }
+.cards .card .day-vertical{
+    color: rgb(255, 255, 255);
+    transform: rotate(-90deg);
+    top: 22px;
+    left: -30px;
+    position: absolute;
+    z-index: 1000;
+    font-size: 17px;
+    font-weight: 800;
+    opacity: 10%;
+    transition: 0.2s;
+}
+
+
+.cards .card .day{
+    color: rgb(255, 255, 255);
+    font-size: 88px;
+    font-weight:500;
+    position: absolute;
+    float: left;
+    z-index: 11;
+    left: 75%;
+    margin-left: -35px;
+
+}
+
+.cards .card .d{
+    height: 100%;
+    width: 50%;
+    margin-left: 40px;
+    right: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    font-size: 15px;
+    transition: 0.2s;
+    top: 0;
+
+}
+
+
+.cards .card button{
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    border: none;
+    left: 90px;
+    border-radius: 60px;
+    background-color: #00ff22c8;
+    color: #fff;
+    font-family: poppins;
+    font-weight: 800;
+    display: none;
+    cursor: pointer;
+}
+
+.cards .card .d-evt:hover > .day-vertical{
+    left: -100px;
+}
+
+
+.cards .card .d-evt:hover > .d{
+    top: -100px;
+}
+
+.cards .card .d-evt:hover > button{
+    display: block;
+}
+
 
 
 /* aaaaaaaa */

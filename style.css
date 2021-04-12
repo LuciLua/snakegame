@@ -200,7 +200,91 @@ canvas{
         padding: 0px;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.482); 
     }
+    .cards .card .absolute .shape-card{
+        max-height: 100%;
+        height: 100%;
+        max-width: 100%;
+        width: 100%;
+        position: absolute;
+        top:35px!important;
+        left: 0;
+    }
     
+    .cards .card .absolute .shape-card #neu{
+        top: -20px;
+        max-height: 130%;
+        height: 130%;
+        max-width: 120%;
+        width: 150%;
+        position: absolute;
+        z-index: 21;
+        animation: shape 10s ease infinite;
+        transform: rotateZ(0deg);
+    }
+    
+    .cards .card .absolute .d{
+        color: #fff;
+        font-family: poppins;
+        font-weight: 800;
+        font-size: 40px;
+        position: relative;
+    }
+    
+    .cards .card .absolute .day{
+        color: rgb(0, 255, 30);
+        font-family: poppins;
+        font-weight: 800;
+        font-size: 40px;
+        position: relative;
+    }
+    
+    
+    .cards .card .absolute .d-d{
+        color: rgb(171, 171, 171);
+        font-family: poppins;
+        font-weight: 200;
+        font-size: 14px;
+        top: 0px;
+        left: 0;
+        position: relative;
+        transition: 0.3s;
+        display: none;
+    }
+    
+    .align-d{
+        width: 55%;
+        position: relative;
+        left: 45%;
+        top: -60%;
+        transition: 0.4s;
+    }
+        
+    .cards .card .absolute{
+        position: absolute;
+        padding: 30px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .cards .card .absolute button{
+        position: relative;
+        border: none;
+        border-radius: 60px;
+        background-color: #14f508;
+        color: #fff;
+        font-family: poppins;
+        font-weight: 400;
+        padding: 5px 15px;
+        left: 55%!important;
+        top: -60%!important;
+        cursor: pointer;
+        transition: 0.3s;
+        display: block!important;
+    }
+    
+    
+
+
 .ranking .rank-table table th{
     font-size: 1.9vh;
 }
@@ -394,7 +478,7 @@ canvas{
 .cards .card{
     margin: 10px;
     width: 400px;
-    height: 100px;
+    height: 150px;
     background-color: #131313;
     border-left: #14f508 5px solid;
     border-top-right-radius: 6px;
@@ -403,80 +487,115 @@ canvas{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    
-}
-.cards .card .day-vertical{
-    color: rgb(255, 255, 255);
-    transform: rotate(-90deg);
-    top: 22px;
-    left: -30px;
-    position: absolute;
-    z-index: 1000;
-    font-size: 17px;
-    font-weight: 800;
-    opacity: 10%;
-    transition: 0.2s;
-}
-
-
-.cards .card .day{
-    color: rgb(255, 255, 255);
-    font-size: 88px;
-    font-weight:500;
-    position: absolute;
-    float: left;
-    z-index: 11;
-    left: 75%;
-    margin-left: -35px;
-
-}
-
-.cards .card .d{
-    height: 100%;
-    width: 50%;
-    margin-left: 40px;
-    right: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
-    z-index: 10;
-    font-size: 15px;
-    transition: 0.2s;
-    top: 0;
-
+    padding: 40px;
 }
 
-
-.cards .card button{
+.cards .card .absolute .shape-card{
+    max-height: 100%;
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
     position: absolute;
-    width: 140px;
-    height: 40px;
-    border: none;
-    left: 90px;
-    border-radius: 60px;
-    background-color: #00ff22c8;
+    top:20px;
+    left: 0;
+}
+
+.cards .card .absolute .shape-card #neu{
+    top: -20px;
+    max-height: 130%;
+    height: 130%;
+    max-width: 120%;
+    width: 150%;
+    position: absolute;
+    z-index: 21;
+    animation: shape 10s ease infinite;
+    transform: rotateZ(0deg);
+}
+
+.cards .card .absolute .d{
     color: #fff;
     font-family: poppins;
     font-weight: 800;
-    display: none;
+    font-size: 40px;
+    position: relative;
+}
+
+.cards .card .absolute .day{
+    color: rgb(0, 255, 30);
+    font-family: poppins;
+    font-weight: 800;
+    font-size: 40px;
+    position: relative;
+}
+
+
+.cards .card .absolute .d-d{
+    color: rgb(171, 171, 171);
+    font-family: poppins;
+    font-weight: 200;
+    font-size: 14px;
+    top: 0px;
+    left: 0;
+    position: relative;
+    transition: 0.3s;
+}
+
+.align-d{
+    width: 55%;
+    position: relative;
+    left: 45%;
+    top: -60%;
+    transition: 0.4s;
+}
+
+.cards .card .absolute:hover > .align-d{
+    color: rgb(171, 171, 171);
+    font-family: poppins;
+    font-weight: 200;
+    font-size: 14px;
+    left: 500px;
+    position: relative;
+    z-index: 1000;
+}
+
+.cards .card .absolute{
+    position: absolute;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.cards .card .absolute button{
+    position: relative;
+    border: none;
+    border-radius: 60px;
+    background-color: #14f508;
+    color: #fff;
+    font-family: poppins;
+    font-weight: 400;
+    padding: 5px 15px;
+    left: 50%;
+    top: 60%;
     cursor: pointer;
-}
-
-.cards .card .d-evt:hover > .day-vertical{
-    left: -100px;
+    transition: 0.3s;
 }
 
 
-.cards .card .d-evt:hover > .d{
-    top: -100px;
+.cards .card .absolute:hover >  button{
+    position: relative;
+    border: none;
+    border-radius: 60px;
+    background-color: #14f508;
+    color: #fff;
+    font-family: poppins;
+    font-weight: 400;
+    padding: 5px 15px;
+    left: 50%;
+    top: -110%;
+    cursor: pointer;
+    z-index: 100;
 }
-
-.cards .card .d-evt:hover > button{
-    display: block;
-}
-
-
 
 /* aaaaaaaa */
 

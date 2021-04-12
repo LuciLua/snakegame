@@ -25,6 +25,8 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
+    margin-top: 100px;
+
 }
 img{
     position: absolute;
@@ -49,7 +51,6 @@ canvas{
     background-color: #01010158;
     height: 80px;
     width: 100%;
-    margin-bottom: 100px;
 }
 
 .main ul{
@@ -276,17 +277,23 @@ canvas{
     display: flex;
     justify-content: center;
     position: relative;
-    margin: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
-.ranking .ranking-title h1{
+.ranking .ranking-title h1, .eventos .eventos-title h1{
     color: rgb(232, 232, 232);
     text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.496);
     font-family: Poppins;
     font-weight: 200;
     position: relative;
     font-size: 2.2em;
-    
+}
+.eventos .eventos-title h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .ranking .rank-table{
@@ -328,6 +335,48 @@ canvas{
 .ranking .rank-table table .thA{
     background-color: #121215;
     text-align: center;
+}
+
+.eventos{
+    width: 100%;
+    height: 60vh;
+}
+
+.eventos .eventos-content p{
+    position: relative;
+    width: 65%;
+    height: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #797979;
+    margin-bottom: 30px;
+    font-family: poppins;
+    font-weight: 400;
+    
+}
+
+.cards{
+    width: 90%;
+    height: fit-content;
+    position: relative;
+    background-color: #262630;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+
+.cards .card{
+    margin: 10px;
+    width: 400px;
+    height: 100px;
+    background-color: #131313;
+    border-left: #14f508 5px solid;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 

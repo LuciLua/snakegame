@@ -403,7 +403,7 @@ canvas{
     margin: 5px!important;
     z-index: 1000!important;
     position: relative!important;
-    border-radius: 20px!important;
+    border-radius: 60px!important;
     text-align: center!important;
     display: flex!important;
     align-items: center!important;
@@ -411,36 +411,36 @@ canvas{
 }
 
 .setas ul li:active{
-    background-color: #090909!important;;
+    background-color: #323232!important;;
 }
 
 #cima{
     transform: rotateZ(-90deg)!important;;
     position: absolute!important;;
-    top: -50px!important;
-    left: 100px;
+    top: -58px!important;
+    left: -10px;
     
 }
 
 #baixo{
   transform: rotateZ(90deg)!important;;
   position: absolute!important;;
-  top: 30px!important;
-  left: 100px;
+  top: 27px!important;
+  left: -10px;
 
 
 }
 
 #esquerda{
 position: absolute!important;;
-left: -120px!important;
-top: -50px;
+left: -90px!important;
+top: -15px;
 }
 
 #direita{
   position: absolute!important;
-  right: 130px!important;
-  top: 30px;
+  right: -60px!important;
+  top: -15px;
 
 }
   }

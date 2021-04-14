@@ -71,6 +71,7 @@ function game() {
     // posição da maca
     ctx.fillRect(ax*gs,ay*gs,gs-2,gs-2);
 }
+
 function keyPush(evt) {
     switch(evt.keyCode) {
         // seta pra esquerda
@@ -90,9 +91,36 @@ function keyPush(evt) {
             xv=0;yv=1;
             break;
     }
+
+
+function clique(){
+    up = document.getElementById('cima').addEventListener('click',alert('ola'))
+    return up
 }
 
+}
+
+document.getElementById('cima').onclick = function(){
+    xv=0;yv=-1;
+}
+document.getElementById('baixo').onclick = function(){
+    xv=0;yv=1;
+}
+document.getElementById('direita').onclick = function(){
+    xv=1;yv=0;
+}
+document.getElementById('esquerda').onclick = function(){
+    xv=-1;yv=0;
+}
+
+
+
 // popup
+
+
+
+
+
 
 
 // Open the Modal

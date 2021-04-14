@@ -344,7 +344,93 @@ canvas{
     display: none;
 }
 
+.setas ul{
+    list-style: none;
+    width: 90px;
+    height: 90px;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
 
+.setas{
+    width: 48%;
+    height: 100%;
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabelas{
+    width: 49%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex!important;
+    flex-direction: column!important;
+}
+
+.tabela{
+    height: 30px!important;;
+    width: 120px!important;;
+    margin: 0!important;;
+}
+
+.divs{
+    display: flex!important;;
+    width: 95%!important;;
+    height: 200px!important;;
+    position: relative!important;;
+}
+
+
+.setas ul li{
+    color: #fff!important;;
+    font-family: poppins!important;;
+    font-weight: 800!important;;
+    width: 40px!important;;
+    height: 40px!important;;
+    background-color: #6f786f56!important;;
+    margin: 5px!important;;
+    z-index: 1000!important;;
+    position: relative!important;;
+    border-radius: 50px!important;;
+    text-align: center!important;;
+    display: flex!important;;
+    align-items: center!important;;
+    justify-content: center!important;;
+}
+
+.setas ul li:active{
+    background-color: #090909!important;;
+}
+
+#cima{
+    transform: rotateZ(-90deg)!important;;
+    position: absolute!important;;
+    top: -10px!important;;
+    
+}
+
+#baixo{
+  transform: rotateZ(90deg)!important;;
+  position: absolute!important;;
+  top: 50px!important;;
+
+}
+
+#esquerda{
+position: absolute!important;;
+left: -10px!important;;
+}
+
+#direita{
+  position: absolute!important;
+  right: -10px!important;;
+}
   }
 
 
@@ -705,8 +791,90 @@ canvas{
   }
 
   .footer{
-      background-color: #19191C;
-      width: 100%;
+    background-color: #19191C;
+    width: 100%;
     height: fit-content;
-      position: absolute;
+    position: absolute;
   }
+
+
+  
+.setas ul{
+    list-style: none;
+    width: 90px;
+    height: 90px;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.setas{
+    width: 48%;
+    height: 100%;
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tabelas{
+    width: 100%!important;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex!important;
+    flex-direction: column!important;
+}
+
+.tabela{
+    height: 30px;
+    width: 120px;
+    margin: 0;
+}
+
+.divs{
+    display: flex;
+    width: 95%;
+    height: 200px;
+    position: relative;
+}
+
+
+.setas ul li:hover{
+    display: none;
+
+}
+
+#cima{
+    transform: rotateZ(-90deg);
+    position: absolute;
+    top: -10px;
+    display: none;
+
+    
+}
+
+#baixo{
+  transform: rotateZ(90deg);
+  position: absolute;
+  top: 50px;
+  display: none;
+
+
+}
+
+#esquerda{
+position: absolute;
+left: -10px;
+display: none;
+
+}
+
+#direita{
+    display: none;
+  position: absolute;
+  right: -10px;
+}

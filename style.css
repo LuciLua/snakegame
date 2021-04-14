@@ -348,20 +348,9 @@ canvas{
     list-style: none;
     width: 80px;
     height: 90px;
-    background-color: transparent;
     position: relative;
     display: flex;
-    margin-left: -200px;
-    align-items: center;
-}
-
-.setas{
-    width: 48%;
-    height: 100%;
-    position: relative;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
+    margin-left: -300px;
     align-items: center;
 }
 
@@ -373,6 +362,7 @@ canvas{
     display: flex!important;
     flex-direction: column!important;
     z-index: -1;
+    
 }
 
 #tabD{
@@ -388,7 +378,7 @@ canvas{
     width: 120px!important;;
     position: relative;
     top: -450px;
-    margin-left: 130px!important;
+    margin-left: 10px!important;
 }
 
 .divs{
@@ -399,6 +389,7 @@ canvas{
     align-items: center!important;
     justify-content: center!important;
     margin: 0;
+    background-color: #24252B!important;
 }
 
 
@@ -406,8 +397,8 @@ canvas{
     color: rgb(0, 242, 36)!important;
     font-family: poppins!important;
     font-weight: 800!important;
-    width: 55px!important;
-    height: 55px!important;
+    width: 70px!important;
+    height: 70px!important;
     background-color: #01010198!important;
     margin: 5px!important;
     z-index: 1000!important;
@@ -427,7 +418,7 @@ canvas{
     transform: rotateZ(-90deg)!important;;
     position: absolute!important;;
     top: -50px!important;
-    left: 0px;
+    left: 100px;
     
 }
 
@@ -435,21 +426,21 @@ canvas{
   transform: rotateZ(90deg)!important;;
   position: absolute!important;;
   top: 30px!important;
-  left: 0px;
+  left: 100px;
 
 
 }
 
 #esquerda{
 position: absolute!important;;
-left: -50px!important;
-top: -10px;
+left: -120px!important;
+top: -50px;
 }
 
 #direita{
   position: absolute!important;
-  right: -25px!important;
-  top: -10px;
+  right: 130px!important;
+  top: 30px;
 
 }
   }
@@ -831,7 +822,8 @@ top: -10px;
 }
 
 .setas{
-    width: 48%;
+    width: 0%;
+    display: none;
     height: 100%;
     position: relative;
     background-color: transparent;
@@ -843,22 +835,25 @@ top: -10px;
 
 .tabelas{
     width: 100%!important;
-    position: relative;
-    align-items: center;
-    justify-content: center;
+    background-color: #24252B!important;
+    position: relative!important;
+    align-items: center!important;
+    justify-content: center!important;
     display: flex!important;
     flex-direction: column!important;
 }
 
 .tabela{
     height: 30px;
-    width: 120px;
+    width: 220px;
     margin: 0;
 }
 
 .divs{
     display: flex;
-    width: 95%;
+    width: 100%;
+    background-color: #090909;
+    display: flex;
     height: 200px;
     position: relative;
 }

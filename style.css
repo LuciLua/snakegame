@@ -161,10 +161,10 @@ canvas{
     border-radius: 60%;
   }
   footer{
-      position:absolute;
+      position:relative;
       width: 100%;
       height: 50px;
-      background-color: rgba(16, 16, 16, 0.568);
+      background-color: #19191C;
       bottom: 0;
   }
 
@@ -700,4 +700,12 @@ canvas{
     text-align: center; 
     width: 100%; 
     height: fit-content; 
+  }
+
+  .footer{
+      background-color: #19191C;
+      width: 100%;
+      min-height: 65px;
+      max-height: 65px;
+      position: absolute;
   }

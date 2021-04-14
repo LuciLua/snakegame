@@ -1,100 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <script data-ad-client="ca-pub-4858122402080637" async 
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <meta name="Luci" content="Snake Game">
-    <meta name="description" content="Você é um cobrinha e precisa se alimentar de uma maçã que surge aleatoriamente pela
-    tela para poder crescer!">
-    <meta property="og:image" content="snake.png">
-    <meta property="og:description" content="Você é um cobrinha e precisa se alimentar de uma maçã que surge aleatoriamente pela
-    tela para poder crescer!">
-    <meta property="og:title" content="Snake Game">
-    <link rel="shortcut icon" href="snake.ico">
-    <link rel=”canonical” href=”https://www.gamesnake.tk/”/>
-    <meta name="keywords" content="gamesnake, snake game,snakegame,jogo da cobra,cobra,lucilua,luci lua,Luci Lua,LuciLua,LuciLua81,Lucilua81,lucilua81,luci.lua81,lúcia maria rosa guelber,jogo,joguinho,
-    jogo de navegador,jogos gratis,jogo gratis,jogar jogos,jogar jogo da cobra,jogar agora,jogos online gratis,games,game,github,javascript,jogo com javascript,js,ecmascript game,html jogo,css jogo,jogar jogo,play,play game,play game snake"/>
-    <meta name="robots" content="index,follow">
-    <meta http-equiv="content-language" content="pt-br">
-    <meta name="author" content="Luci">
-    <meta name="reply-to" content="luci4dev@gmail.com">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-53QRLMGV71"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <head>
+        <script data-ad-client="ca-pub-4858122402080637" async 
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Snake</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <meta name="Luci" content="Snake Game">
+        <meta name="description" content="Você é um cobrinha e precisa se alimentar de uma maçã que surge aleatoriamente pela
+        tela para poder crescer!">
+        <meta property="og:image" content="snake.png">
+        <meta property="og:description" content="Você é um cobrinha e precisa se alimentar de uma maçã que surge aleatoriamente pela
+        tela para poder crescer!">
+        <meta property="og:title" content="Snake Game">
+        <link rel="shortcut icon" href="snake.ico">
+        <link rel=”canonical” href=”https://www.gamesnake.tk/”/>
+        <meta name="keywords" content="gamesnake, snake game,snakegame,jogo da cobra,cobra,lucilua,luci lua,Luci Lua,LuciLua,LuciLua81,Lucilua81,lucilua81,luci.lua81,lúcia maria rosa guelber,jogo,joguinho,
+        jogo de navegador,jogos gratis,jogo gratis,jogar jogos,jogar jogo da cobra,jogar agora,jogos online gratis,games,game,github,javascript,jogo com javascript,js,ecmascript game,html jogo,css jogo,jogar jogo,play,play game,play game snake"/>
+        <meta name="robots" content="index,follow">
+        <meta http-equiv="content-language" content="pt-br">
+        <meta name="author" content="Luci">
+        <meta name="reply-to" content="luci4dev@gmail.com">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-53QRLMGV71"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-  gtag('config', 'G-53QRLMGV71');
-</script>
-</head>
-<body>
-    <div class="main">
-        <ul>
-            <a target="_blank" href="https://www.github.com/LuciLua">
-                <li>
-                    <span class="title">GitHub</span>
-                    <span class="icon" id="git">
-                        <i class="fa fa-github-alt" aria-hidden="true"></i>
-                    </span>
-                </li>
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/in/l%C3%BAcia-guelber-837a50185/">
-                <li>
-                    <span class="title">Linkedin</span>
-                    <span class="icon" id="linkedin">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </span>
-                </li>
-            </a>
-            <a href="eventos.html">
-                <li>
-                    <span class="title">Eventos</span>
-                    <span class="icon" id="event">
-                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                    </span>
-                </li>
-            </a>
-            <a href="ranking.html">
-                <li>
-                    <span class="title">Ranking</span>
-                    <span class="icon" id="rank">
-                        <i class="fa fa-list-ul" aria-hidden="true"></i>
-                    </span>
-                </li>
-            </a>
-            <a href="index.html">
-                <li>
-                    <span class="title">Snake game</span>
-                    <span class="icon" id="home">
-                        <i class="fa fa-gamepad" aria-hidden="true"></i>
-                    </span>
-                </li>
-            </a>
-        </ul>
-    </div>
-<div class="i"><img src="snake.webp" alt=""></div>
-<canvas id="gc" width="400" height="400"></canvas>
-<div class="tabela">
-<h1>Pontuação: <span id="pts">0</span></h1>
-</div>
-<div class="tabela">
-    <h1>Dificuldade: <span id="dif">Medio</span></h1>
-    <div class="align-in">
-        <input type="range" id="in" min="10" max="80" value="55" oninput="velo()">
-    </div>
-    </div>
-    <footer>
-        <p>
+            gtag('config', 'G-53QRLMGV71');
+        </script>
+    </head>
+    <body>
+        <div class="main">
+            <ul>
+                <a target="_blank" href="https://www.github.com/LuciLua">
+                    <li>
+                        <span class="title">GitHub</span>
+                        <span class="icon" id="git">
+                            <i class="fa fa-github-alt" aria-hidden="true"></i>
+                        </span>
+                    </li>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/l%C3%BAcia-guelber-837a50185/">
+                    <li>
+                        <span class="title">Linkedin</span>
+                        <span class="icon" id="linkedin">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </span>
+                    </li>
+                </a>
+                <a href="eventos.html">
+                    <li>
+                        <span class="title">Eventos</span>
+                        <span class="icon" id="event">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </span>
+                    </li>
+                </a>
+                <a href="ranking.html">
+                    <li>
+                        <span class="title">Ranking</span>
+                        <span class="icon" id="rank">
+                            <i class="fa fa-list-ul" aria-hidden="true"></i>
+                        </span>
+                    </li>
+                </a>
+                <a href="index.html">
+                    <li>
+                        <span class="title">Snake game</span>
+                        <span class="icon" id="home">
+                            <i class="fa fa-gamepad" aria-hidden="true"></i>
+                        </span>
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div class="i"><img src="snake.webp" alt=""></div>
+        <canvas id="gc" width="400" height="400"></canvas>
+        <div class="tabela">
+            <h1>Pontuação: <span id="pts">0</span></h1>
+        </div>
+        <div class="tabela">
+            <h1>Dificuldade: <span id="dif">Medio</span></h1>
+            <div class="align-in">
+                <input type="range" id="in" min="10" max="80" value="55" oninput="velo()">
+            </div>
+        </div>
+        <footer>
+            <p>
             @2021 SnakeGame, Luci
-        </p>
-    </footer>
-<script src="snake.js"></script>
-</body>
+            </p>
+        </footer>
+        <script src="snake.js"></script>
+    </body>
 </html>

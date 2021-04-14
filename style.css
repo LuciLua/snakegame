@@ -686,8 +686,14 @@ canvas{
   
 
   .anuncios-block{
-    width: 40vh;
-    height: 100%; 
+    background-color: #d53737;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    max-width: fit-content; 
+    width: fit-content;
     margin: 10px;
   }
 
@@ -696,6 +702,7 @@ canvas{
     display: flex; 
     justify-content: center; 
     align-items: center; 
+    flex-wrap: wrap;
     position: relative; 
     text-align: center; 
     width: 100%; 
@@ -705,7 +712,6 @@ canvas{
   .footer{
       background-color: #19191C;
       width: 100%;
-      min-height: 65px;
-      max-height: 65px;
+    height: fit-content;
       position: absolute;
   }

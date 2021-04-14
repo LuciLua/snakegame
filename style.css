@@ -346,11 +346,12 @@ canvas{
 
 .setas ul{
     list-style: none;
-    width: 90px;
+    width: 80px;
     height: 90px;
     background-color: transparent;
     position: relative;
     display: flex;
+    margin-left: -200px;
     align-items: center;
 }
 
@@ -371,37 +372,51 @@ canvas{
     justify-content: center;
     display: flex!important;
     flex-direction: column!important;
+    z-index: -1;
+}
+
+#tabD{
+    display: none;
+}
+
+.align-in{
+    display: none;
 }
 
 .tabela{
-    height: 30px!important;;
+    height: 20px!important;;
     width: 120px!important;;
-    margin: 0!important;;
+    position: relative;
+    top: -450px;
+    margin-left: 130px!important;
 }
 
 .divs{
     display: flex!important;;
     width: 95%!important;;
     height: 200px!important;;
-    position: relative!important;;
+    position: relative!important;
+    align-items: center!important;
+    justify-content: center!important;
+    margin: 0;
 }
 
 
 .setas ul li{
-    color: #fff!important;;
-    font-family: poppins!important;;
-    font-weight: 800!important;;
-    width: 40px!important;;
-    height: 40px!important;;
-    background-color: #6f786f56!important;;
-    margin: 5px!important;;
-    z-index: 1000!important;;
-    position: relative!important;;
-    border-radius: 50px!important;;
-    text-align: center!important;;
-    display: flex!important;;
-    align-items: center!important;;
-    justify-content: center!important;;
+    color: rgb(0, 242, 36)!important;
+    font-family: poppins!important;
+    font-weight: 800!important;
+    width: 55px!important;
+    height: 55px!important;
+    background-color: #01010198!important;
+    margin: 5px!important;
+    z-index: 1000!important;
+    position: relative!important;
+    border-radius: 20px!important;
+    text-align: center!important;
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
 }
 
 .setas ul li:active{
@@ -411,25 +426,31 @@ canvas{
 #cima{
     transform: rotateZ(-90deg)!important;;
     position: absolute!important;;
-    top: -10px!important;;
+    top: -50px!important;
+    left: 0px;
     
 }
 
 #baixo{
   transform: rotateZ(90deg)!important;;
   position: absolute!important;;
-  top: 50px!important;;
+  top: 30px!important;
+  left: 0px;
+
 
 }
 
 #esquerda{
 position: absolute!important;;
-left: -10px!important;;
+left: -50px!important;
+top: -10px;
 }
 
 #direita{
   position: absolute!important;
-  right: -10px!important;;
+  right: -25px!important;
+  top: -10px;
+
 }
   }
 

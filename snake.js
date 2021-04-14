@@ -92,12 +92,6 @@ function keyPush(evt) {
             break;
     }
 
-
-function clique(){
-    up = document.getElementById('cima').addEventListener('click',alert('ola'))
-    return up
-}
-
 }
 
 document.getElementById('cima').onclick = function(){

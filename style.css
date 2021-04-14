@@ -687,12 +687,7 @@ canvas{
 
   .anuncios-block{
     background-color: #d53737;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
     height: fit-content;
-    max-width: fit-content; 
     width: fit-content;
     margin: 10px;
   }

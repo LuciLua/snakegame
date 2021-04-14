@@ -676,3 +676,20 @@ canvas{
       color: #14f508; 
   }
   
+
+  .anuncios-block{
+    width: 40vh;
+    height: 100%; 
+    margin: 10px;
+  }
+
+  .adsense{
+    background-color: #19191C; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+    text-align: center; 
+    width: 100%; 
+    height: fit-content; 
+  }

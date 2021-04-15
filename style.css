@@ -687,7 +687,7 @@ top: -15px;
 }
 
 
-.cards .card .absolute:hover >  button{
+.cards .card .absolute:hover > a button{
     position: relative;
     border: none;
     border-radius: 60px;

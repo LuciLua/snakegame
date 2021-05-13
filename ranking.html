@@ -90,216 +90,170 @@
             <th>Pontuação</th>
             <th>PrintScreen</th>
           </tr>
+
           <tr class="thA">
             <td>1</td>
             <td>Mathizes</td>
-            <td>33</td>
+            <td>41</td>
             <td class="column">
-              <p onclick="openModal();currentSlide(1)" class="hover-shadow">Link</p>
-              <!-- The Modal/Lightbox -->
-              <div id="myModal" class="modal">
-                <span class="close cursor" onclick="closeModal()">&times;</span>
-                <div class="modal-content">
-                  <div class="mySlides">
-                    <img src="/img/mathizespts.jpeg">
-                  </div>                       
-                  <!-- Caption text -->
-                  <div class="caption-container">
-                    <p id="caption">Pontuação do User</p>
-                  </div>
+              <p onclick="clique()" alt="Link" title="link" id="imgM1">Link</p>
+              <div id="janelaModal" class="modalVisual" title="0">
+                <div class="div">
+                  <img class="modalConteudo" id="i1" src="/img/lucipts.jpeg"/>
+                  <span class="fechar" onclick="btnClose()">x</span>
                 </div>
               </div>
             </td>
           </tr>
+          <script>
+            function clique(){
+              document.getElementById('janelaModal').style.display='flex';
+            }    
+            </script>
+            <script>
+              function btnClose(){
+                document.getElementById('janelaModal').style.display='none';
+              }
+            </script>
+
+
+
+
           <tr>
             <td>2</td>
             <td>Luci</td>
             <td>30</td>
             <td class="column">
-              <p onclick="openModal();currentSlide(1)" class="hover-shadow">Link</p>
-              <!-- The Modal/Lightbox -->
-              <div id="myModal" class="modal">
-                <span class="close cursor" onclick="closeModal()">&times;</span>
-                <div class="modal-content">
-                  <div class="mySlides">
-                    <img src="/img/lucipts.jpeg">
-                  </div>                       
-                  <!-- Caption text -->
-                  <div class="caption-container">
-                    <p id="caption">Pontuação do User</p>
-                  </div>
+              <p onclick="clique(this)" alt="Link" title="link" id="imgM2">Link</p>
+              <div id="janelaModal" class="modalVisual" title="0">
+                <div class="div">
+                  <img class="modalConteudo" id="i2" src="/img/lucipts.jpeg"/>
+                  <span class="fechar" onclick="btnClose(this)">x</span>
                 </div>
               </div>
             </td>
           </tr>
+
           <tr class="thA">
             <td>3</td>
             <td>Isis</td>
             <td>0</td>
             <td class="column">
-              <p onclick="openModal();currentSlide(1)" class="hover-shadow">Link</p>
-              <!-- The Modal/Lightbox -->
-              <div id="myModal" class="modal">
-                <span class="close cursor" onclick="closeModal()">&times;</span>
-                <div class="modal-content">
-                  <div class="mySlides">
-                    <img src="/img/lucipts.jpeg">
-                  </div>                       
-                  <!-- Caption text -->
-                  <div class="caption-container">
-                    <p id="caption">Pontuação do User</p>
-                  </div>
+              <p onclick="clique(this)" id="imgM3">Link</p>
+              <div id="janelaModal" class="modalVisual">
+                <div class="div">
+                  <img class="modalConteudo" id="i3" src="/img/mathizespts.jpeg">
+                  <span class="fechar" onclick="btnClose()">x</span>
                 </div>
               </div>
             </td>
           </tr>
+
           <tr>
             <td>4</td>
             <td>User</td>
             <td>0</td>
             <td class="column">
-              <p onclick="openModal();currentSlide(1)" class="hover-shadow">Link</p>
-              <!-- The Modal/Lightbox -->
-              <div id="myModal" class="modal">
-                <span class="close cursor" onclick="closeModal()">&times;</span>
-                <div class="modal-content">
-                  <div class="mySlides">
-                    <img src="/img/lucipts.jpeg">
-                  </div>                       
-                  <!-- Caption text -->
-                  <div class="caption-container">
-                    <p id="caption">Pontuação do User</p>
-                  </div>
+              <p onclick="clique(this)" id="imgM4">Link</p>
+              <div id="janelaModal" class="modalVisual">
+                <div class="div">
+                  <img class="modalConteudo" id="i4" src="/img/mathizespts.jpeg">
+                  <span class="fechar" onclick="btnClose()">x</span>
                 </div>
               </div>
             </td>
           </tr>
+
           <tr class="thA">
             <td>5</td>
             <td>User</td>
             <td>0</td>
             <td class="column">
-              <p onclick="openModal();currentSlide(1)" class="hover-shadow">Link</p>
-              <!-- The Modal/Lightbox -->
-              <div id="myModal" class="modal">
-                <span class="close cursor" onclick="closeModal()">&times;</span>
-                <div class="modal-content">
-                  <div class="mySlides">
-                    <img src="/img/lucipts.jpeg">
-                  </div>                       
-                  <!-- Caption text -->
-                  <div class="caption-container">
-                    <p id="caption">Pontuação do User</p>
-                  </div>
+              <p onclick="clique(this)" id="imgM5">Link</p>
+              <div id="janelaModal" class="modalVisual">
+                <div class="div">
+                  <img class="modalConteudo" id="i5" src="/img/mathizespts.jpeg">
+                  <span class="fechar" onclick="btnClose()">x</span>
                 </div>
               </div>
             </td>
           </tr>
+
           <tr>
             <td>6</td>
             <td>User</td>
             <td>0</td>
             <td class="column">
-              <p onclick="openModal();currentSlide(1)" class="hover-shadow">Link</p>
-              <!-- The Modal/Lightbox -->
-              <div id="myModal" class="modal">
-                <span class="close cursor" onclick="closeModal()">&times;</span>
-                <div class="modal-content">
-                  <div class="mySlides">
-                    <img src="/img/lucipts.jpeg">
-                  </div>                       
-                  <!-- Caption text -->
-                  <div class="caption-container">
-                    <p id="caption">Pontuação do User</p>
-                  </div>
+              <p onclick="clique(this)" id="imgM6">Link</p>
+              <div id="janelaModal" class="modalVisual">
+                <div class="div">
+                  <img class="modalConteudo" id="i6" src="/img/mathizespts.jpeg">
+                  <span class="fechar" onclick="btnClose()">x</span>
                 </div>
               </div>
             </td>
           </tr>
+
           <tr class="thA">
             <td>7</td>
             <td>User</td>
             <td>0</td>
             <td class="column">
-              <p onclick="openModal();currentSlide(1)" class="hover-shadow">Link</p>
-              <!-- The Modal/Lightbox -->
-              <div id="myModal" class="modal">
-                <span class="close cursor" onclick="closeModal()">&times;</span>
-                <div class="modal-content">
-                  <div class="mySlides">
-                    <img src="/img/lucipts.jpeg">
-                  </div>                       
-                  <!-- Caption text -->
-                  <div class="caption-container">
-                    <p id="caption">Pontuação do User</p>
-                  </div>
+              <p onclick="clique(this)" id="imgM7">Link</p>
+              <div id="janelaModal" class="modalVisual">
+                <div class="div">
+                  <img class="modalConteudo" id="i7" src="/img/mathizespts.jpeg">
+                  <span class="fechar" onclick="btnClose()">x</span>
                 </div>
               </div>
             </td>
           </tr>
+
           <tr>
             <td>8</td>
             <td>User</td>
             <td>0</td>
             <td class="column">
-              <p onclick="openModal();currentSlide(1)" class="hover-shadow">Link</p>
-              <!-- The Modal/Lightbox -->
-              <div id="myModal" class="modal">
-                <span class="close cursor" onclick="closeModal()">&times;</span>
-                <div class="modal-content">
-                  <div class="mySlides">
-                    <img src="/img/lucipts.jpeg">
-                  </div>                       
-                  <!-- Caption text -->
-                  <div class="caption-container">
-                    <p id="caption">Pontuação do User</p>
-                  </div>
+              <p onclick="clique(this)" id="imgM8">Link</p>
+              <div id="janelaModal" class="modalVisual">
+                <div class="div">
+                  <img class="modalConteudo" id="i8" src="/img/mathizespts.jpeg">
+                  <span class="fechar" onclick="btnClose()">x</span>
                 </div>
               </div>
             </td>
           </tr>
+
           <tr class="thA">
             <td>9</td>
             <td>User</td>
             <td>0</td>
             <td class="column">
-              <p onclick="openModal();currentSlide(1)" class="hover-shadow">Link</p>
-              <!-- The Modal/Lightbox -->
-              <div id="myModal" class="modal">
-                <span class="close cursor" onclick="closeModal()">&times;</span>
-                <div class="modal-content">
-                  <div class="mySlides">
-                    <img src="/img/lucipts.jpeg">
-                  </div>                       
-                  <!-- Caption text -->
-                  <div class="caption-container">
-                    <p id="caption">Pontuação do User</p>
-                  </div>
+              <p onclick="clique(this)" id="imgM9">Link</p>
+              <div id="janelaModal" class="modalVisual">
+                <div class="div">
+                  <img class="modalConteudo" id="i9" src="/img/mathizespts.jpeg">
+                  <span class="fechar" onclick="btnClose()">x</span>
                 </div>
               </div>
             </td>
           </tr>
+
           <tr>
             <td>10</td>
             <td>User</td>
             <td>0</td>
             <td class="column">
-              <p onclick="openModal();currentSlide(1)" class="hover-shadow">Link</p>
-              <!-- The Modal/Lightbox -->
-              <div id="myModal" class="modal">
-                <span class="close cursor" onclick="closeModal()">&times;</span>
-                <div class="modal-content">
-                  <div class="mySlides">
-                    <img src="/img/lucipts.jpeg">
-                  </div>                       
-                  <!-- Caption text -->
-                  <div class="caption-container">
-                    <p id="caption">Pontuação do User</p>
-                  </div>
+              <p onclick="clique(this)" id="imgM10" >Link</p>
+              <div id="janelaModal" class="modalVisual">
+                <div class="div">
+                  <img class="modalConteudo" id="i10" src="/img/mathizespts.jpeg">
+                  <span class="fechar" onclick="btnClose()">x</span>
                 </div>
               </div>
             </td>
           </tr>
+
         </table>
         <!-- fim da table' -->
       </div>
@@ -313,4 +267,5 @@
 
     <script src="snake.js"></script>
   </body>
-</html>
+  </html>
+  
